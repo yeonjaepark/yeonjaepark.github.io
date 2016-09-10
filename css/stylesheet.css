@@ -1,0 +1,186 @@
+/* Custom stylesheet for homepage */
+body {
+	background-color: white;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	display: block;
+	max-width: none;
+	border: solid 2px black;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   display: inline-block;
+}
+
+hr {
+	height: 2px;
+	width: 80%;
+}
+
+span.glyphicon-menu-down {
+    font-size: 3em;
+}
+
+.fullpage {
+	height: 100vh;
+}
+
+.fullpage1 {
+	height: 100%;
+	min-height: 100%;
+}
+
+.transparent {
+	background-color: rgba(255,255,255,0.6);
+}
+
+.title {
+	display: block;
+	font-family: 'Inconsolata';
+	font-size: 4em;
+	text-align: center;
+	color: black;
+	border: solid 1px black;
+}
+
+.logo {
+	display: none;
+	font-family: 'Domine';
+	text-align: center;
+	border-radius: 1em;
+    padding: 1em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #02006F;
+}
+
+.pagecenter {
+	/*position: relative;
+  	top: 20%;
+  	transform: translateY(-20%);*/
+  	padding-top: 4em;
+}
+
+.workimg {
+	vertical-align: middle;
+}
+
+#arrowdown {
+	position: absolute;
+	top: 130%;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#home {
+	position: relative;
+    overflow: hidden;
+}
+
+#home:before {
+	background-size: cover;
+	background-image: url("../photos/IMG_1709.jpg");
+	content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+#about {
+	display: block;
+	padding: 4em 12% 4em 12%;
+}
+
+#about hr {
+	color: white;
+}
+
+#summary {
+	display: block;
+	margin-top: 1.5em;
+	font-family: 'Inconsolata';
+	font-size: 1.55em;
+	text-align: center;
+	padding-right: 8%;
+	padding-left: 8%;
+}
+
+#work {
+	display: block;
+	background-color: white;
+	padding: 4em 12% 4em 12%;
+	font-family: 'Inconsolata'
+}
+
+#work img {
+	padding-bottom: 1em;
+	height: 100%;
+}
+
+#work p {
+	padding-bottom: 1em;
+	color: gray;
+	text-align: left;
+}
+
+#work hr {
+	border-color: #A9B7C0;
+}
+
+#contact {
+	display: block;
+	padding: 4em 12% 4em 12%;
+	text-align: center;
+}
+
+#contact img {
+	padding-top: 1em;
+	padding-bottom: .5em;
+}
+
+#contact a {
+	color: black;
+	font-family: "Inconsolata";
+	font-size: 1.5em;
+}
+
+#reachout {
+	font-family: 'Inconsolata';
+	font-size: 2em;
+}
+
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
