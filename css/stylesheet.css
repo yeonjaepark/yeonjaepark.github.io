@@ -1,53 +1,51 @@
 /* Custom stylesheet for homepage */
-body {
-	background-color: white;
-}
 
+/* all sections */
 section {
 	position: relative;
 	width: 100%;
 	display: block;
 	max-width: none;
-	border: solid 2px black;
 }
 
+/* all images */
 img {
    max-width: 100%;
    height: auto;
    display: inline-block;
 }
 
+/* all page dividers */
 hr {
 	height: 2px;
 	width: 80%;
 }
 
+/* down arrow button */
 span.glyphicon-menu-down {
     font-size: 3em;
 }
 
+/* used for contact */
 .fullpage {
 	height: 100vh;
 }
 
-.fullpage1 {
-	height: 100%;
-	min-height: 100%;
-}
-
+/* used for nav bar transparency */
 .transparent {
 	background-color: rgba(255,255,255,0.6);
 }
 
+/* for titles about me, work, contac t*/
 .title {
 	display: block;
-	font-family: 'Inconsolata';
+	font-family: 'Gravitas One';
 	font-size: 4em;
 	text-align: center;
-	color: black;
-	border: solid 1px black;
+	color: #02006F;
 }
 
+/* for homepage text */
 .logo {
 	display: none;
 	font-family: 'Domine';
@@ -62,17 +60,17 @@ span.glyphicon-menu-down {
     color: #02006F;
 }
 
+/* for contact spacing */
 .pagecenter {
-	/*position: relative;
-  	top: 20%;
-  	transform: translateY(-20%);*/
   	padding-top: 4em;
 }
 
+/* for images of projects */
 .workimg {
 	vertical-align: middle;
 }
 
+/* for the arrow button on homepage */
 #arrowdown {
 	position: absolute;
 	top: 130%;
@@ -86,9 +84,10 @@ span.glyphicon-menu-down {
     overflow: hidden;
 }
 
+/* to change the transparency of background image */
 #home:before {
 	background-size: cover;
-	background-image: url("../photos/IMG_1709.jpg");
+	background-image: url("../photos/background.jpg");
 	content: "";
     display: block;
     position: absolute;
@@ -106,7 +105,7 @@ span.glyphicon-menu-down {
 }
 
 #about hr {
-	color: white;
+	color: #C4C4C4;
 }
 
 #summary {
@@ -121,7 +120,7 @@ span.glyphicon-menu-down {
 
 #work {
 	display: block;
-	background-color: white;
+	background-color: #C4C4C4;
 	padding: 4em 12% 4em 12%;
 	font-family: 'Inconsolata'
 }
@@ -133,12 +132,12 @@ span.glyphicon-menu-down {
 
 #work p {
 	padding-bottom: 1em;
-	color: gray;
+	color: #595959;
 	text-align: left;
 }
 
 #work hr {
-	border-color: #A9B7C0;
+	border-color: "white";
 }
 
 #contact {
@@ -158,12 +157,17 @@ span.glyphicon-menu-down {
 	font-size: 1.5em;
 }
 
+#contact hr {
+	color: #C4C4C4;
+}
+
 #reachout {
 	font-family: 'Inconsolata';
 	font-size: 2em;
+	color: #02006F;
 }
 
-/* Float */
+/* Float when mouse hovers over in contact me */
 .hvr-float {
   display: inline-block;
   vertical-align: middle;

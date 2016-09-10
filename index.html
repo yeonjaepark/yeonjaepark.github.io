@@ -14,7 +14,7 @@
 	<link href="css/bootstrap.css" rel="stylesheet"/>
 
   <!-- link the logo font -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans|Abril+Fatface|Patua+One|Ribeye|Ribeye+Marrow|Domine|Amatic+SC">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata|Domine|Gravitas+One">
 
   <!-- custom css link -->
   <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
@@ -39,14 +39,14 @@
         <span class="icon-bar"></span>
       </button>
 			<!-- link to my homepage -->
-      <a class="navbar-brand" href="http://www.yeonjaepark.com" style="font-family: Inconsolata">yeonjae park</a>
+      <a class="navbar-brand" href="http://www.yeonjaepark.com" style="font-family: Domine">YEONJAE PARK</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="smoothScroll" href="#home">HOME</a></li>
-        <li><a class="smoothScroll" href="#about">ABOUT</a></li>
-        <li><a class="smoothScroll" href="#work">WORK</a></li>
-        <li><a class="smoothScroll" href="#contact">CONTACT</a></li>
+        <li><a class="smoothScroll" href="#home" style="font-family: Domine">HOME</a></li>
+        <li><a class="smoothScroll" href="#about" style="font-family: Domine">ABOUT</a></li>
+        <li><a class="smoothScroll" href="#work" style="font-family: Domine">WORK</a></li>
+        <li><a class="smoothScroll" href="#contact" style="font-family: Domine">CONTACT</a></li>
       </ul>
     </div>
   </div>
@@ -58,7 +58,7 @@
     <p style="font-size:6em">YEONJAE PARK</p>
     <p style="font-size: 1.5em">Scholar • Dreamer • Developer</p>
     <div id="arrowdown">
-      <a class="smoothScroll" href="#about" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="color:#1F1D89"></span></a>
+      <a class="smoothScroll" href="#about" role="button"><span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="color:#02006F"></span></a>
     </div> 
   </div>
 </section>
@@ -66,25 +66,27 @@
 <!-- ABOUT ME -->
 <section id="about" class="container-fluid">
   <div class="title"> about me </div>
-  <hr color="white" height="3px">
+  <hr color="#C4C4C4" height="3px">
   <div class="row text-center">
     <img src="photos/aboutme.jpg">
   </div>
   <div id="summary" class="row">
     <p> Hi! My name is Yeonjae and I am currently a sophomore at Dartmouth College majoring in computer science and economics. At Dartmouth, I am a cellist in the Dartmouth Symphony Orchestra and a member of the Academic Affairs Committee on Student Assembly. Outside of academics, I am passionate about photography, cello, volleyball, and outdoor adventure sports.</p>
 
-    <p style="margin-top: 1.5em"> I was raised in a suburb in the Greater Boston Area and call the city of Boston my home. I attended Belmont High School, where I was involved in Women's Volleyball and Christian Club, among various other activities. </p>
+    <p style="margin-top: 1.5em"> I was raised in a suburb in the Greater Boston Area and call the city of Boston my home. I attended Belmont High School, where I was involved in Women's Volleyball and founded a Students' Christian Club, among various other activities. </p>
 
     <p style="margin-top: 1.5em"> This summer, I worked as a cancer researcher at Dartmouth-Hitchcock Medical Center in the Samkoe Lab. I worked on image analysis and used Matlab to develop an image coregistration program. </p>
+
+    <p style="margin-top: 1.5em"> Currently, I am mainly seeking a software development internship, but am open to other positions and roles! I love to problem-solve and am always eager to learn new things!</p>
   </div>
-  <hr color="white" height="3px">
+  <hr color="#C4C4C4" height="3px">
 
 </section>
 
 <!-- WORK -->
 <section id="work" class="container-fluid">
-  <div class="title" style="color:#A9B7C0"> my work </div>
-  <hr color="#A9B7C0" height="3px">
+  <div class="title"> my work </div>
+  <hr color="white" height="3px">
   <div class="row text-center">
     <div class="col-md-4">
       <h4>Image Coregistration</h4>
@@ -115,16 +117,18 @@
     <div class="col-md-4">
       <h4>Huffman Encoding</h4>
       <img src="photos/huffmanencoding.png">
-      <p>Developed the file compressing and decompressing program using Huffman encoding. This </p>
+      <p>Developed the file compressing and decompressing program using Huffman encoding. This compacts the contents of a file using variable-length encoding of characters. Therefore, frequently occurring letters get shorter code words than infrequently occurring letters.</p>
+      <p>Language: Java</p>
     </div>
     <div class="col-md-4">
       <h4>Connect4 AI</h4>
       <img src="photos/connect4.png">
-      <p>Developed this image correlating program to help validate that the in vivo head and neck tumor image matches the ex vivo gold standard image.</p>
+      <p>Developed this Connect4 game with an artificial-intelligence computer player. This is played on a graphical user interface and can be played against a computer or another human opponent. The computer can be set at various difficulty levels, in which the computer uses a game-tree search program, using alpha-beta pruning, to choose the next best move.</p>
+      <p>Language: Java</p>
     </div>
   </div>
 
-  <hr color="#A9B7C0" height="3px">
+  <hr color="white" height="3px">
 </section>
 
 
@@ -132,7 +136,7 @@
 <section id="contact" class="fullpage container-fluid">
   <div class="title"> contact </div>
   <div class="pagecenter">
-  <hr color="white" height="3px">
+  <hr color="#C4C4C4" height="3px">
   <div class="row" id="reachout"> 
     <p>feel free to reach out!</p>
   </div>
@@ -141,16 +145,16 @@
       <a href="mailto:yeonjaepark@gmail.com"><img src="photos/mail.png" class="hvr-float"><p class="links">email</p></a>
     </div>
     <div class="col-md-3">
-      <a href="https://www.linkedin.com/in/yeonjae-park"><img src="photos/linkedin.png" class="hvr-float"><p class="links">linkedin</p></a>
+      <a href="https://www.linkedin.com/in/yeonjae-park" target="_blank"><img src="photos/linkedin.png" class="hvr-float"><p class="links">linkedin</p></a>
     </div>
     <div class="col-md-3">
-      <a href="https://github.com/yeonjaepark"><img src="photos/github.png" class="hvr-float"><p class="links">github</p></a>
+      <a href="https://github.com/yeonjaepark" target="_blank"><img src="photos/github.png" class="hvr-float"><p class="links">github</p></a>
     </div>
     <div class="col-md-3">
-      <a href="" style=""><img src="photos/resume-icon.png" class="hvr-float"><p>resume</p></a>
+      <a href="https://drive.google.com/file/d/0Bw4l20S4N0ovbEFSV0M3RGhzeFk/view?usp=sharing" target="_blank"><img src="photos/resume-icon.png" class="hvr-float"><p>resume</p></a>
     </div>
   </div>
-  <hr color="white" height="3px"></div>
+  <hr color="#C4C4C4" height="3px"></div>
 </section>
 
 </body>
