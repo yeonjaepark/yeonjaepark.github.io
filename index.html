@@ -2,46 +2,132 @@
 <html>
   <head>
     <!-- custom css link -->
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- google font link -->
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|BenchNine|Handlee|Patrick+Hand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans|BenchNine|Handlee|Patrick+Hand" rel="stylesheet">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
 
     <title>Yeonjae Park</title>
   </head>
 
   <body>
-		<div class="comingsoon">
-			<p>Coming soon :)</p>
-		</div>
-		<!-- <nav>
-			<ul>
-				<li class="logo"> <a href="#">y.park</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Work</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-    <div class="main">
-      <div class="content">
-        <div class="intro">
-					<p>Hello, my name is Yeonjae.</p>
-          <p>Programming skills: Python, Java, C, HTML, CSS, React.js</p>
-        </div>
-      </div>
-			<div class="about">
-				<p>I am currently a junior at Dartmouth College majoring in Computer Science and Economics. This past summer, I worked at Morgan Stanley as a Technology Summer Analyst.</p>
+		<div class="main">
+			<div class="landing-page" id="home">
+				<nav>
+					<ul class="nav">
+						<li id="logo"><a href="#home">y.park</a></li>
+						<li class="aboutbutton"><a href="#about">About</a></li>
+						<li id="workbutton"><a href="#work">Work</a></li>
+						<li id="contactbutton"><a href="#contact">Contact</a></li>
+					</ul>
+					<ul class="mobile-nav">
+            <li class="logo"><a href="#">y.park</a></li>
+            <li><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+          </ul>
+				</nav>
+				<div class="content">
+					<h1> Hi there, my name is <span>Yeonjae</span>.</h1>
+					<h4> I'm a <span> developer and a programmer </span></h4>
+					<div class="callout">
+						<a class="aboutbutton" href="#about"><p>Learn more</p><a>
+					</div>
+				</div>
 			</div>
-    </div>
 
+			<div class="about" id="about">
+				<h1 class="headings"> About Me </h1>
+				<div class="info">
+					<img src="photos/portrait.jpg"/>
+					<div class="bio">
+						<p>I am currently a junior at Dartmouth College studying Computer Science and Economics.</p>
+						<p>This past summer of 2017, I worked at Morgan Stanley as a Technology Summer Analyst.</p>
+						<p>I love seeing the code I develop come to life for anyone to see and use. When I am not working on my next project, you can find me going out on photography adventures.</p>
+					</div>
+				</div>
+			</div>
 
-    <div class="contact" id="contact">
-      <h1> Where to find me </h1>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/yeonjae-park/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-        <li><a href="https://github.com/yeonjaepark"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-        <li><a href="https://www.instagram.com/yeonjaep/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-      </ul>
-    </div> -->
+			<div class="work" id="work">
+				<h1 class="headings"> My Work </h1>
+
+				<div class="proj">
+					<div class="description">
+						<h2> Grouprr </h2>
+						<p> Grouprr is a web application that tracks expenses within groups and faciliates easy splitting of expenses by group members. There's no need to do messy calculations and individually charge everyone for expenses anymore, Grouprr does it for you! This was developed using React/Redux and Firebase. </p>
+					</div>
+					<div class="picture">
+						<a href="https://grouprr.surge.sh">
+							<img src="photos/grouprr.png"/>
+              <p class="visit"> visit site </p>
+						</a>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="proj">
+					<div class="picture">
+            <a href="https://thedartmouth.github.io/winter-carnival-2017/">
+              <img src="photos/winter.png"/>
+              <p class="visit"> visit site </p>
+            </a>
+          </div>
+					<div class="description">
+						<h2> Winter Carnival </h2>
+						<p> Winter Carnival is a special weekend at Dartmouth. I designed and developed this special edition webpage for The Dartmouth Newspaper to showcase all the Winter Carnival related articles. </p>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="proj">
+					<div class="description">
+						<h2> Yummy in my Tummy </h2>
+						<p> Yummy in my Tummy is a responsive landing page I designed for my Full Stack Web Development class with a food blog in mind. I was required to use solely HTML and CSS without any other frameworks. </p>
+					</div>
+					<div class="picture">
+            <a href="http://yeonjaepark.com/yummy-in-my-tummy">
+              <img src="photos/yummy.png"/>
+              <p class="visit"> visit site </p>
+            </a>
+          </div>
+				</div>
+				<div class="divider"></div>
+				<div class="proj">
+					<div><img src="photos/imageCor.png"/></div>
+					<div class="description">
+						<h2> Image Correlator </h2>
+						<p> I developed this image correlating program for my research in head and neck tumors. This correlator helps validate that the in vivo and ex vivo tumor images match. It uses both non-rigid and rigid transformations to correlate the images and then plots the average intensities by regions to show that the in vivo image properly detects the tumor. </p>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="proj">
+					<div class="description">
+						<h2> Tiny Search Engine </h2>
+						<p> The tiny search engine searches through pages of the Dartmouth Computer Science website. Its three components are the web crawler, indexer, and query. The crawler, given a web URL, crawls through to find all other weboages linked to this URL. Then the indexer creates an inverted index of all the words and frequencies found on the pages. Finally, the query allows users to search for words through the commandline and prints out the webpages containing the words, ranked by frequency. </p>
+					</div>
+					<div><img src="photos/search.png"/></div>
+				</div>
+				<div class="divider"></div>
+				<div class="proj">
+					<div><img src="photos/pebble.png"/></div>
+					<div class="description">
+						<h2> Mission Incomputable </h2>
+						<p> Mission Incomputable is a game using the Pebble watch that containing three components: a field agent, a guide agent, and a game server. The field agent and guide agent communicate through the server to look for and neutralize code drops that are scattered around a certain location while avoiding being captured by opposing players. </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="contact" id="contact">
+	      <h1 class="headings"> Feel free to reach out! </h1>
+	      <ul>
+					<li><a href="mailto:yeonjaepark@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+	        <li><a href="https://www.linkedin.com/in/yeonjae-park/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+	        <li><a href="https://github.com/yeonjaepark"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+	        <li><a href="https://drive.google.com/file/d/0Bw4l20S4N0ovRk15YlVzdjJRa1k/view?usp=sharing"><i class="fa fa-file-text" aria-hidden="true"></i></a></li>
+	      </ul>
+			</div>
+			<footer>
+				<p> Copyright Yeonjae Park 2017 </p>
+			</footer>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	  <script src="js/main.js"></script>
   </body>
 </html>
