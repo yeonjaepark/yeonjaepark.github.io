@@ -14,6 +14,10 @@ body {
 	color: #474350;
 }
 
+.hidden {
+  display: none;
+}
+
 .main {
 	display: flex;
 	flex-flow: column nowrap;
