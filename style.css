@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #FCF9FF;
-  font-family: Amatic SC;
+  font-family: BenchNine;
 	color: #474350;
 }
 
@@ -21,7 +21,7 @@ body {
 .main {
 	display: flex;
 	flex-flow: column nowrap;
-  font-family: 'Amatic SC';
+  font-family: BenchNine;
 }
 
 .landing-page {
@@ -31,6 +31,10 @@ body {
 a {
 	color: #474350;
   text-decoration: none;
+}
+
+nav {
+  width: 100%;
 }
 
 nav ul {
@@ -54,7 +58,7 @@ nav li {
   padding-right: 10px;
   padding-left: 10px;
   border-radius: 10px;
-	transition: .5s;
+	transition: 1s;
 }
 
 nav li:first-child {
@@ -103,17 +107,16 @@ nav li:not(#logo):hover {
 	color: white;
 	background-color: #FE938C;
 	border: #FE938C 2px solid;
-	transition: .3s;
+	transition: .5s;
 }
 
 .callout p:hover {
 	border: #FE938C 2px solid;
-	color: black;
+	color: #474350;
 	background-color: transparent;
 }
 
 .about {
-	/*border: #FE938C solid 1px;*/
 	background-color: #FE938C;
 	text-align: center;
 	padding: 60px 0 100px 0;
@@ -184,6 +187,7 @@ nav li:not(#logo):hover {
   padding: 5px 10px 5px 10px;
   border-radius: 20px;
   background-color: #FE938C;
+  pointer-events: none;
 }
 
 .proj .picture img:hover {
@@ -201,7 +205,7 @@ nav li:not(#logo):hover {
 }
 
 .description h2 {
-	font-family: Amatic SC;
+	font-family: BenchNine;
 	padding: 0;
 	margin: 0;
 	font-size: 40px;
@@ -259,5 +263,6 @@ footer {
 
 	.mobile-nav {
 		display: flex;
+    width: 100%;
 	}
 }
